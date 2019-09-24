@@ -1,3 +1,4 @@
 {
-	"mongoURI": "mongodb+srv://Katten:1234@mycluster-feumr.mongodb.net/Traversty?retryWrites=true&w=majority"
+	"mongoURI": "mongodb+srv://Katten:1234@mycluster-feumr.mongodb.net/Traversty?retryWrites=true&w=majority",
+	"jwtSecret": "secret"
 }
