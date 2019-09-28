@@ -227,7 +227,7 @@ const removeFromList = async (req, res, array) => {
 router.get('/github/:username', (req, res) => {
 	try {
 		const options = {
-			uri: `https://api.github.com/users${
+			uri: `https://api.github.com/users/${
 				req.params.username
 			}/repos?per_page=5&sort=created:asc&client_id=${config.get(
 				'githubClientId'
@@ -240,7 +240,7 @@ router.get('/github/:username', (req, res) => {
 			if (er) console.error(er)
 
 			if (resp.statusCode !== 200) res.status(404).json({ msg: 'No profile found' })
-			res.json(JSON.parse(body))
+			else res.json(JSON.parse(body))
 		})
 	} catch (e) {
 		res.status(500).send(e)
