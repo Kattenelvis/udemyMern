@@ -1,0 +1,6 @@
+{
+	"mongoURI": "mongodb+srv://Katten:1234@mycluster-feumr.mongodb.net/Traversty?retryWrites=true&w=majority",
+	"jwtSecret": "secret",
+	"githubClientId": "e4b038a10acf38d83603",
+	"githubSecret": "4e3eb964bc93ea566b6944ae2238d7efaa636fb3"
+}
